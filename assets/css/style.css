@@ -61,6 +61,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+p {
+    line-height: 1.5rem;
+}
+
 /* Setup da section info, centralizando o texto e definindo as cores para as fontes */
 h1 {
     font-family: 'Orbitron', sans-serif;
@@ -78,7 +82,7 @@ section#info p {
     line-height: 2rem;
 }
 
-section#info p:last-of-type {
+section#info p#destaque {
     font-size: 2rem;
     color: #007EA7;
     margin: 2rem 0;
@@ -91,7 +95,8 @@ section.noticias {
 /* Definição dos containers das notícias e vídeos
 * Uso do flexbox para criar sessões do mesmo tamanho e alinhadas
 */
-section div.container{
+section div.container,
+section div.container-videos {
     display: flex;
     justify-content: space-between;
 }
@@ -113,11 +118,11 @@ footer small {
     font-size: 2rem;
 }
 
-div#perfil-pic {
-    background: url("../img/ProfileDraft_016.jpg") center center;
+#perfil-pic img {
+    display: block;
     width: 200px;
-    height: 200px;
     border-radius: 50%;
+    margin: 0 auto;
 }
 
 .icon-set {
@@ -125,8 +130,9 @@ div#perfil-pic {
     justify-content: center;
 }
 
-.icon-set img {
+.icon-set img,
+.icon-set i {
     display: inline-block;
     width: 100px;
     margin: 0 20px 20px;
-}
+}   
