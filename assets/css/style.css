@@ -1,0 +1,132 @@
+/**
+*   Import das fonts do Google Fonts:
+*   Lato: fonte sem serifa para todo o corpo de texto
+*   PT Serif: fonte serifada para os títulos
+**/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Serif:wght@400;700&family=Orbitron:wght@900&display=swap');
+
+/* CSS resets - defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    background-color: #00171F;
+    color: #fff;
+}
+
+main {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #007EA7;
+    margin: 1.5rem 0;
+}
+
+
+/* Header setup
+* Usando Flexbox para posicionar tanto a brand quanto
+* os itens de navegação
+*/
+
+header nav {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav span {
+    font-size: 1.5rem;
+    color: #007EA7;
+    font-family: 'Orbitron', sans-serif;
+}
+
+header nav ul li {
+    padding: 0 1.2rem;
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    color: #007EA7;
+    text-decoration: underline;
+}
+
+/* Setup da section info, centralizando o texto e definindo as cores para as fontes */
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #007EA7;
+    margin: 2rem 0;
+}
+
+section#info {
+    text-align: center;
+}
+
+section#info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+section#info p:last-of-type {
+    font-size: 2rem;
+    color: #007EA7;
+    margin: 2rem 0;
+}
+/* Definições de sessões e espaçamento entre elas */
+section.noticias {
+    margin: 2.5rem 0;
+}
+
+/* Definição dos containers das notícias e vídeos
+* Uso do flexbox para criar sessões do mesmo tamanho e alinhadas
+*/
+section div.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Centralizar o footer e definir o texto como block para preencher todo o espaço */
+footer {
+    padding: 2.5rem;
+}
+
+footer small {
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+}
+
+/* Estilos exclusivos da página Sobre */
+#perfil h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+div#perfil-pic {
+    background: url("../img/ProfileDraft_016.jpg") center center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.icon-set {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-set img {
+    display: inline-block;
+    width: 100px;
+    margin: 0 20px 20px;
+}
