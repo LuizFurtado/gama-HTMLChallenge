@@ -101,6 +101,15 @@ section div.container-videos {
     justify-content: space-between;
 }
 
+div.container .card,
+div.container-videos .card {
+    width: 30%;
+}
+
+div.container .card img {
+    width: 100%;
+}
+
 /* Centralizar o footer e definir o texto como block para preencher todo o espaço */
 footer {
     padding: 2.5rem;
@@ -135,4 +144,12 @@ footer small {
     display: inline-block;
     width: 100px;
     margin: 0 20px 20px;
-}   
+}
+
+/* Estilos para centralizar o form */
+
+.noticias form {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
