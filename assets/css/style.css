@@ -153,3 +153,34 @@ footer small {
     max-width: 800px;
     margin: 0 auto;
 }
+
+@media (max-width: 576px) {
+    h1,h2 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        margin: 0 20px;
+    }
+
+    section#info p {
+        font-size:  1rem;
+        line-height: 1.5rem;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    section div.container,
+    section div.container-videos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.container .card,
+    div.container-videos .card {
+        margin: 20px auto;
+        width: 80%;
+    }
+}
